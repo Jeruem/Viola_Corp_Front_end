@@ -11,8 +11,12 @@
     <div class="row">
         <!-- Première ligne -->
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card image-card">
                 <img src="/images/guitare hero scene.jpg" class="card-img-top" alt="Guitare 1">
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Omega Dragon</h5>
                     <p class="card-text">Cette guitare est une merveille artisanale et sonore, le chef d'oeuvre de notre sélection</p>
@@ -21,8 +25,12 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card image-card">
                 <img src="/images/Omnislash.jpg" class="card-img-top" alt="Omnislash">
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Omnislash</h5>
                     <p class="card-text">Une guitare électrique polyvalente pour tous les styles de musique.</p>
@@ -31,8 +39,12 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card image-card">
                 <img src="/images/Effelgen String.jpg" class="card-img-top" alt="Guitare 3">
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Effelgen String</h5>
                     <p class="card-text">Idéale pour les connaisseurs, une pièce de qualité.</p>
@@ -44,8 +56,12 @@
     <div class="row">
         <!-- Deuxième ligne -->
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card image-card">
                 <img src="/images/Spear Tackle.jpg" class="card-img-top" alt="Guitare 4">
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Spear Tackle</h5>
                     <p class="card-text">Une guitare idéale pour les sons puissants et nerveux.</p>
@@ -54,8 +70,12 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card image-card">
                 <img src="/images/Drastic Shot.jpg" class="card-img-top" alt="Guitare 5">
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Drastic Shot</h5>
                     <p class="card-text">Guitare classique avec des cordes en nylon pour un son doux.</p>
@@ -64,8 +84,12 @@
             </div>
         </div>
         <div class="col-md-4 mb-4">
-            <div class="card">
+            <div class="card image-card">
                 <img src="/images/String Impact.jpg" class="card-img-top" alt="Guitare 6">
+                <div class="action-image-buttons">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">String Impact</h5>
                     <p class="card-text">Un modèle vintage avec un look unique et un son incroyable.</p>
@@ -75,3 +99,55 @@
         </div>
     </div>
 </section>
+
+
+<!-- Modal edition -->
+
+<div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="NamePhotoInput" class="form-label">Titre</label>
+                  <input type="text" class="form-control" id="NamePhotoInput" placeholder="Lasagnes à la bolognese" name="Titre"> 
+                </div>
+                <div class="mb-3">
+                  <label for="ImageInput" class="form-label">Image</label>
+                  <input type="file" class="form-control" id="ImageInput"  name="Image">
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal suppression photo -->
+<div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">Confirmer la suppression de la photo ?</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <img src="/images/guitare hero scene.jpg" class="w-100" alt="image à supprimer">
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary text-danger">Supprimer</button>
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-primary text-secondary">Annuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

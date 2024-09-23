@@ -11967,20 +11967,6 @@ textarea.form-control-lg {
   }
 }
 .navbar-custom {
-  background-color: #000000;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-}
-
-.navbar-custom .nav-link {
-  color: #F5F5F5;
-}
-
-.navbar-custom .nav-link:hover {
-  color: white;
-}
-
-.navbar-custom {
   background-color: #fff;
   color: #000000;
   font-family: "Roboto", sans-serif;
@@ -12150,4 +12136,23 @@ textarea.form-control-lg {
 .service-card p {
   font-size: 1rem;
   color: #666;
+}
+
+.image-card {
+  position: relative;
+}
+.image-card:hover .titre-image,
+.image-card:hover .action-image-buttons {
+  opacity: 1;
+}
+.image-card .action-image-buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.3s;
 }/*# sourceMappingURL=main.css.map */

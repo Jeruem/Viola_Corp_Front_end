@@ -175,3 +175,29 @@
     font-size: 1rem;
     color: #666;
 }
+
+//Edition images et suppression //
+
+.image-card{
+    position:relative;
+    &:hover{
+        .titre-image,
+        .action-image-buttons{
+            opacity: 1;
+        }
+    }
+
+
+    .action-image-buttons{
+        position : absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+
+        opacity: 0;
+        transition: all 0.3s;
+    }
+}
