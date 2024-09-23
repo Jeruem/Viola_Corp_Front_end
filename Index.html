@@ -6,16 +6,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="scss/main.css">
-
-
     <title>Document</title>
 </head>
-
 <body>
-    <header><nav class="navbar navbar-expand-lg bg-primary text-white" data-bs-theme="dark">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">Viola Corp</a>
+          <h3><a class="nav-link" href="/">Viola Corp</a></h3>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,32 +24,59 @@
                 <a class="nav-link" href="/">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/galerie">Galerie</a>
+                <a class="nav-link" href="/nosguitares">Nos Guitares</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nos Guitares</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Nos basses</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Mon compte</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Connexion/Deconnexion</a>
+                <a class="nav-link" href="/nosbasses">Nos basses</a>
               </li>
               <li class="nav-item"></li>
+                <a class="nav-link" href="/reparation">Réparation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/account">Mon compte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/signin">Connexion</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#"><i class="bi bi-cart4"></i></a>
               </li>
             </ul>
           </div>
         </div>
-      </nav></header>
+      </nav>
+    </header>
 
-    <main id="main-page"></main>
+    <main id="main-page">
+      
+    </main>
 
-    <footer>le footer du site</footer>
+    <footer class="bg-dark text-white">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-12 col-lg-4 mb-3 ml-1 text-start">
+                  <h3>Nos horaires</h3>
+                  <p>Du lundi au samedi 9:00-13:00, 14:00-19:00</p>
+              </div>
+              <div class="col-6 col-lg-4 mb-3 ml-1">
+                  <h3>Viola Corp</h3>
+                  <p>
+                      5 rue de l'humanité<br/>
+                      232323 Argenta <br/>
+                      04 01 01 01 01 <br/>
+                  </p>
+              </div>
+              <div class="col-6 col-lg-4 mb-3 ml-1">
+                  <h3>Email</h3>
+                  <p>violacorp@mail.com</p>
+              </div>
+          </div>
+      </div>
+    </footer>
     <script type="module" src="router/router.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+    
 </body>
 </html>

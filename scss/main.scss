@@ -1,2 +1,177 @@
 @import 'custom';
 @import url('/node_modules/bootstrap-icons/font/bootstrap-icons.css');
+
+.navbar-custom {
+    background-color: $white; 
+    color: $primary;
+    font-family: $font-family-sans-serif;
+}
+
+.navbar-custom .nav-link{
+    color: $primary;
+}
+
+.navbar-custom .nav-link:hover {
+    color: lighten($primary, 10%);
+}
+
+.hero-scene {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/Guitare\ selection.jpg);
+        background-size: cover; /* Couvre toute la largeur et la hauteur */
+        background-position: center; /* Centre l'image */
+        filter: brightness(0.3);
+    }
+
+    * {
+        position: relative; /* Positionne les éléments devant le ::before */
+    }
+
+    .hero-scene-content {
+        height: 300px; /* Ajuste la hauteur selon tes besoins */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white; /* Assure-toi que le texte est visible sur l'image */
+    }
+}
+
+.position-relative {
+    overflow: hidden; /* Pour cacher la partie de l'image qui déborde */
+}
+
+.position-relative img {
+    transition: transform 0.3s ease; /* Animation pour le zoom */
+}
+
+.position-relative:hover img {
+    transform: scale(1.1); /* Zoomer de 10% au survol */
+}
+
+
+.card {
+    border: none; /* Supprime la bordure par défaut */
+    transition: transform 0.2s; /* Animation lors du hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+.card-img-top {
+    height: 200px; /* Ajuste la hauteur de l'image */
+    object-fit: cover; /* Assure que l'image couvre bien l'espace */
+}
+
+.hero-scene-b {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/Basse\ hero.jpg);
+        background-size: cover; /* Couvre toute la largeur et la hauteur */
+        background-position: center; /* Centre l'image */
+        filter: brightness(0.3);
+    }
+
+    * {
+        position: relative; /* Positionne les éléments devant le ::before */
+    }
+
+    .hero-scene-b-content {
+        height: 300px; /* Ajuste la hauteur selon tes besoins */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white; /* Assure-toi que le texte est visible sur l'image */
+    }
+}
+
+.hero-scene-c {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/Guitare\ selection.jpg);
+        background-size: cover; /* Couvre toute la largeur et la hauteur */
+        background-position: center; /* Centre l'image */
+        filter: brightness(0.3);
+    }
+
+    * {
+        position: relative; /* Positionne les éléments devant le ::before */
+    }
+
+    .hero-scene-c-content {
+        height: 300px; /* Ajuste la hauteur selon tes besoins */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white; /* Assure-toi que le texte est visible sur l'image */
+    }
+}
+
+// Réparation //
+
+.contain {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.intro {
+    text-align: center;
+    margin: 50px 0;
+}
+.intro p {
+    font-size: 1.2rem;
+    color: #333;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: center;
+}
+.service-card img {
+    width: 100%; /* Ajuste l'image à la largeur du conteneur */
+    height: 200px; /* Tu peux ajuster cette valeur selon tes préférences */
+    object-fit: cover; /* Garde le ratio tout en remplissant l'espace */
+}
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+.service-card p {
+    font-size: 1rem;
+    color: #666;
+}
