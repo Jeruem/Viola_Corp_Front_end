@@ -12155,4 +12155,9 @@ textarea.form-control-lg {
   justify-content: space-between;
   opacity: 0;
   transition: all 0.3s;
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */

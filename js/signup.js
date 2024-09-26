@@ -7,12 +7,16 @@ const inputPassword = document.getElementById("PasswordInput");
 const inputValidationPassword = document.getElementById("ValidatePasswordInput");
 const btnValidation = document.getElementById("btn-validation-inscription");
 
+
 // Ajouter les écouteurs d'événements
 inputNom.addEventListener("keyup", validateForm); 
 inputPreNom.addEventListener("keyup", validateForm);
 inputMail.addEventListener("keyup", validateForm);
 inputPassword.addEventListener("keyup", validateForm);
 inputValidationPassword.addEventListener("keyup", validateForm);
+btnValidation.addEventListener("click", inscrireUtilisateur);
+
+
 
 // Fonction pour valider tout le formulaire
 function validateForm() {
@@ -20,7 +24,7 @@ function validateForm() {
     const prenomOk = validateRequired(inputPreNom);
     const mailOk = validateMail(inputMail);
     const passwordOk = validatePassword(inputPassword);
-    const passwordMatchOk = validateConfirmationPassword(inputPassword, inputValidationPassword); // Correction ici
+    const passwordMatchOk = validateConfirmationPassword(inputPassword, inputValidationPassword); 
 
     // Vérifie si tous les champs sont valides
     if (nomOk && prenomOk && mailOk && passwordOk && passwordMatchOk) {
@@ -83,3 +87,40 @@ function validateRequired(input) {
         return false; // Indique que le champ est invalide
     }
 }
+
+function inscrireUtilisateur() {
+    let myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    let raw = JSON.stringify({
+        "firstName": inputPreNom.value,
+        "lastName": inputNom.value,
+        "email": inputMail.value,
+        "password": inputPassword.value
+    });
+
+    let requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow"
+    };
+
+    fetch("http://127.0.0.1:8000/api/registration", requestOptions)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then((result) => {
+            console.log(result); // Traiter le résultat ici
+            alert("Inscription réussie !"); // Afficher un message de succès
+            // Rediriger ou réinitialiser le formulaire ici si nécessaire
+        })
+        .catch((error) => {
+            console.error('Il y a eu un problème avec la requête fetch:', error);
+            alert("Une erreur est survenue lors de l'inscription. Veuillez réessayer."); // Afficher un message d'erreur
+        });
+}
+

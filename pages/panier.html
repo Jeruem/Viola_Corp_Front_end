@@ -1,0 +1,73 @@
+
+<div class="hero-scene-c text-center text-white">
+    <div class="hero-scene-c-content">
+        
+        <h1>Valider votre panier</h1>
+        
+    </div>
+</div>
+
+
+    <div class="container mt-5">
+        <h1 class="text-center">Validation du Panier</h1>
+
+        <!-- Résumé du panier -->
+        <div class="cart-summary mt-4">
+            <h3>Votre Panier</h3>
+            <div class="row mb-3">
+                <div class="col-md-2 cart-item">
+                    <img src="guitare1.jpg" alt="Guitare 1">
+                </div>
+                <div class="col-md-4">Guitare Électrique Fender Stratocaster</div>
+                <div class="col-md-2">Quantité : 1</div>
+                <div class="col-md-2">Prix : 1200€</div>
+                <div class="col-md-2">Total : 1200€</div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-2 cart-item">
+                    <img src="guitare2.jpg" alt="Guitare 2">
+                </div>
+                <div class="col-md-4">Guitare Acoustique Yamaha</div>
+                <div class="col-md-2">Quantité : 1</div>
+                <div class="col-md-2">Prix : 500€</div>
+                <div class="col-md-2">Total : 500€</div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-10 text-end"><strong>Total Panier :</strong></div>
+                <div class="col-md-2"><strong>1700€</strong></div>
+            </div>
+        </div>
+
+        <!-- Formulaire d'adresse de livraison -->
+        <div class="delivery-info mt-5">
+            <h3>Adresse de Livraison</h3>
+            <form action="confirmation.html" method="post">
+                <div class="mb-3">
+                    <label for="nom" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="nom" name="nom" required>
+                </div>
+                <div class="mb-3">
+                    <label for="adresse" class="form-label">Adresse</label>
+                    <input type="text" class="form-control" id="adresse" name="adresse" required>
+                </div>
+                <div class="mb-3">
+                    <label for="ville" class="form-label">Ville</label>
+                    <input type="text" class="form-control" id="ville" name="ville" required>
+                </div>
+                <div class="mb-3">
+                    <label for="codepostal" class="form-label">Code Postal</label>
+                    <input type="text" class="form-control" id="codepostal" name="codepostal" required>
+                </div>
+                <div class="mb-3">
+                    <label for="pays" class="form-label">Pays</label>
+                    <input type="text" class="form-control" id="pays" name="pays" required>
+                </div>
+
+                <!-- Bouton de validation -->
+                <div class="text-center pb-3">
+                    <button type="submit" class="btn btn-primary">Confirmer l'Achat</button>
+                </div>
+            </form>
+        </div>
+    </div>
