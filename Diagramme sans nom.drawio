@@ -1,9 +1,75 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
   <diagram name="Page-1" id="VDzw9OM8FIFvJXVTKmwa">
-    <mxGraphModel>
+    <mxGraphModel dx="1235" dy="655" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="50" width="480" height="600" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="up_dMRo4sNg1vqjJc3r0-4" target="up_dMRo4sNg1vqjJc3r0-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="up_dMRo4sNg1vqjJc3r0-4" target="up_dMRo4sNg1vqjJc3r0-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="up_dMRo4sNg1vqjJc3r0-4" target="up_dMRo4sNg1vqjJc3r0-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-4" value="Client" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="90" y="260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="up_dMRo4sNg1vqjJc3r0-5" target="up_dMRo4sNg1vqjJc3r0-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="up_dMRo4sNg1vqjJc3r0-5" target="up_dMRo4sNg1vqjJc3r0-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="up_dMRo4sNg1vqjJc3r0-5" target="up_dMRo4sNg1vqjJc3r0-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-5" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="650" y="260" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-6" value="Visite du site" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="90" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="up_dMRo4sNg1vqjJc3r0-7" target="up_dMRo4sNg1vqjJc3r0-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="up_dMRo4sNg1vqjJc3r0-7" target="up_dMRo4sNg1vqjJc3r0-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="up_dMRo4sNg1vqjJc3r0-7" target="up_dMRo4sNg1vqjJc3r0-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-7" value="Inscription et création d&#39;un compte" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-8" value="Effectuer des achats" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="520" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-9" value="Modification des informations des articles" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="110" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-10" value="Modification des images&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="280" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-11" value="Modification des textes du site" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="450" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-16" value="modification d&#39;infos" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="150" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-17" value="connexion" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="334" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-18" value="accès au compte&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="410" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="up_dMRo4sNg1vqjJc3r0-31" value="Use case Diagram" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
