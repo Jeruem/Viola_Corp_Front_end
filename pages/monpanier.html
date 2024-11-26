@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon panier</title>
+    
+    <!-- Lien vers les polices -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap" rel="stylesheet">
+
+    <!-- Lien vers Bootstrap uniquement depuis le CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Lien vers ton fichier CSS généré depuis SCSS -->
+    <link rel="stylesheet" href="/scss/main.css">
+    <link rel="stylesheet" href="/scss/main.scss"> <!-- Vérifie bien le chemin ici -->
+</head>
+<header>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <h3><a class="nav-link" href="/">Viola Corp</a></h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/nosguitares.html">Nos Guitares</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/nosbasses.html">Nos basses</a>
+            </li>
+            <li class="nav-item"></li>
+              <a class="nav-link" href="/reparation">Réparation</a>
+            </li>
+            <li class="nav-item" data-show="connected">
+              <a class="nav-link" href="/account">Mon compte</a>
+            </li>
+            <li class="nav-item" data-show="disconnected">
+              <a class="nav-link" href="/signin">Connexion</a>
+            </li>
+            <li class="nav-item" data-show="connected">
+              <a class="nav-link" id="signoutBtn">Déconnexion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/monpanier.html"><i class="bi bi-cart4"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
+</header>
+
+<body>
+
+<div class="hero-scene" >
+    <div class="hero-scene-content" >
+        <h1>Votre panier</h1>
+    </div>
+</div>
+    
+<div class="container mt-5">
+    <h1 class="text-center">Votre Panier</h1>
+    <div id="cartContainer" class="mt-4">
+        <!-- Les articles ajoutés au panier seront affichés ici -->
+    </div>
+</div>
+<div class="row justify-content-center m-3">
+    <div class="col-2 text-center">
+        <button id="confirmCardBtn" class="btn btn-success">Confirmer l'achat</button>
+    </div>
+    <div class="col-2 text-center">
+        <button id="emptyCartBtn" class="btn btn-danger">Vider le Panier</button>
+    </div>
+</div>
+
+
+
+<div id="footer"></div>
+
+<!-- Script pour charger le contenu du panier -->
+
+<script src="/js/monpanier.js"></script>
+<script src="/js/script.js"></script>
+
+<!-- Optionnel : Scripts nécessaires pour Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

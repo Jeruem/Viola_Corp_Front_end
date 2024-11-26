@@ -1,0 +1,109 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Notre Sélection de guitares</h1>
+    </div>
+</div>
+
+<section id="galerie" class="container my-5">
+    <h2 class="text-center mb-4">Nos Guitares à Vendre</h2>
+    <div class="row">
+       
+
+    <div id="guitare-container"></div>
+</section>
+
+<!-- Modal édition -->
+<div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Édition Photo</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="NamePhotoInput" class="form-label">Titre</label>
+                        <input type="text" class="form-control" id="NamePhotoInput" placeholder="Nom de la guitare" name="Titre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ImageInput" class="form-label">Image</label>
+                        <input type="file" class="form-control" id="ImageInput" name="Image" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal suppression photo -->
+<div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">Confirmer la suppression de la photo ?</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <img src="/images/guitare hero scene.jpg" class="w-100" alt="image à supprimer">
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary text-danger">Supprimer</button>
+                        <button type="button" data-bs-dismiss="modal" class="btn btn-primary text-secondary">Annuler</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+// Charger le header
+fetch('/pages/outils/header.html')
+.then(response => response.text())
+.then(data => {
+    document.getElementById('header').innerHTML = data;
+});
+
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <h3><a class="nav-link" href="/">Viola Corp</a></h3>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/nosguitares.html">Nos Guitares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/nosbasses.html">Nos basses</a>
+          </li>
+          <li class="nav-item"></li>
+            <a class="nav-link" href="/reparation">Réparation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/account">Mon compte</a>
+          </li>
+          <li class="nav-item" data-show="disconnected">
+            <a class="nav-link" href="/signin">Connexion</a>
+          </li>
+          <li class="nav-item" data-show="connected">
+            <a class="nav-link" id="signoutBtn">Déconnexion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/monpanier.html"><i class="bi bi-cart4"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

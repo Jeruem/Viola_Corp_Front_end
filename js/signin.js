@@ -51,6 +51,9 @@ function checkCredentials(event) {
 
             // Placer le token en cookie
             setCookie(RoleCookieName, result.roles[0], 7); // Assure-toi que result.roles[0] existe
+            
+            showAndHideElementsForRoles();
+
             window.location.replace("/");
         })
         .catch(error => console.log('error', error));

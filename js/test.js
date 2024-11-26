@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showAndHideElementsForRoles();
 });
 
-
+// Ton code existant
 const tokenCookieName = "accesstoken";
 const RoleCookieName = "role";
 const signoutBtn = document.getElementById("signoutBtn");
@@ -17,7 +17,7 @@ function getRole(){
 function signout() {
     eraseCookie(tokenCookieName);
     eraseCookie(RoleCookieName);
-    window.location.reload("/");
+    window.location.reload();
 }
 
 function setToken(token){
